@@ -1,5 +1,6 @@
 ---
 title: 'Portal Turret Voiced Roomba'
+author: 'Struan Clark'
 media_order: 'Roomba_Breadboard.jpg,Roomba_Final.jpg,Roomba_FinalAnnotated.png,Roomba_FinalFullView.jpg,Roomba_FinalZoom.jpg,Roomba_SCI_DIN.PNG,Roomba_SensorsAnnotated.png,Roomba_TitleImage.PNG,iRobot_Roomba_500_Open_Interface_Spec.pdf,iRobot_Roomba_600_Open_Interface_Spec.pdf'
 published: true
 date: '2018-07-15'

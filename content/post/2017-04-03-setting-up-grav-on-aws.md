@@ -1,5 +1,6 @@
 ---
 title: 'Setting up Grav on AWS EC2'
+author: 'Struan Clark'
 published: true
 date: '2017-03-04'
 publish_date: '2017-03-04 17:01'

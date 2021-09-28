@@ -1,5 +1,6 @@
 ---
 title: 'Adding an SSH Key to the Windows System Account for Git'
+author: 'Struan Clark'
 published: true
 date: '2017-05-29'
 publish_date: '2017-05-29 20:00'

@@ -1,5 +1,6 @@
 ---
 title: 'Configuring SSL with Let''s Encrypt on AWS EC2'
+author: 'Struan Clark'
 published: true
 date: '2017-03-11'
 publish_date: '2017-03-12 19:54'
