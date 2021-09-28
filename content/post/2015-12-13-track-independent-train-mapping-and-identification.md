@@ -1,5 +1,6 @@
 ---
 title: 'Track Independent Train Mapping and Identification'
+author: 'Struan Clark'
 published: true
 date: '2015-12-13'
 publish_date: '2015-12-13 20:00'
