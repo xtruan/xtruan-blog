@@ -46,11 +46,13 @@ I purchased a few new things to prepare for this project. I decided I wanted to 
 
 The first step in prototyping the "hardware" was construction. I built the Meccasaur to the factory specs using the included instructions. They were pretty good and it was rewarding to go from a box of parts to a giant dinosaur.
 
-![](/blog-static/animatronic-dinosaur/IMG_9418_mec_box_components_sm.jpg?lightbox&resize=700)<br>_This will soon be a dinosaur_
+![](/blog-static/animatronic-dinosaur/IMG_9418_mec_box_components_sm.jpg?lightbox&resize=700)
+_This will soon be a dinosaur_
 
 I designed a schematic for this project using [EAGLE](https://www.autodesk.com/products/eagle/overview). This illustrates how the Pi and the Arduino connect to one another and to the three servos (one for the mouth, and one for each arm). The small rectangular component on the bottom left is the LED and embedded controller for the Meccasaur's eyes; more on that later.
 
-![](/blog-static/animatronic-dinosaur/controller_schem1.png?lightbox&resize=700)<br>_Project schematic_
+![](/blog-static/animatronic-dinosaur/controller_schem1.png?lightbox&resize=700)
+_Project schematic_
 
 I wanted to get spun up on the Arduino programming before the new parts I had ordered arrived so I started the project with a full sized Arduino Uno (actually a knockoff made by OSEPP) that I already had laying around. Since I didn't have any of the servos yet, I investigated what I could do with the existing Meccano hardware...
 
@@ -58,33 +60,43 @@ All Meccano peripherals use a serial protocol called MeccaBrain. The Meccasaur i
 
 Servo motors are pretty cool. They're a combination of a motor and a sensor that measures the motor's position. This allows for it to accurately rotate to a specified angle. By attaching things to the motor, you can make real-world objects respond directly to coded instructions. They're also inexpensive, so are a great way to get started with a project like this one. Most servos use a three-wire configuration for power, ground, and data. Using the Servo library provided by Arduino, they're very easy to interface with.
 
-![](/blog-static/animatronic-dinosaur/IMG_9456_servo_sm.jpg?lightbox&resize=500)<br>_J-Deal Micro Servo_
+![](/blog-static/animatronic-dinosaur/IMG_9456_servo_sm.jpg?lightbox&resize=500)
+_J-Deal Micro Servo_
 
 Once the J-Deal servos arrived I had to modify the Meccasaur to find a way to attach them. For the arms it was pretty easy, I removed them and just attached them by screwing them directly to the arm of the servo. For the mouth, I had to get a little more creative. I initially tried mounting the servo on the side of the jaw, to drive it directly, but [couldn't get it to work](https://www.youtube.com/watch?v=kom5TORWlLY). I then realized that the mouth naturally falls to an open position due to gravity. I ran some fishing line to the bottom jaw and attached it to a servo mounted behind the head. The servo lifts the jaw by pulling on the fishing line. It worked great and turned out to be a more aesthetically pleasing location for the servo to go anyway.
 
-![](/blog-static/animatronic-dinosaur/DSC00768_arm_servo_sm.jpg?lightbox&resize=700)<br>_Arm mounted directly on servo_
+![](/blog-static/animatronic-dinosaur/DSC00768_arm_servo_sm.jpg?lightbox&resize=700)
+_Arm mounted directly on servo_
 
-![](/blog-static/animatronic-dinosaur/DSC00766_mouth_servo_1_sm.jpg?lightbox&resize=700)<br>_Servo connected to mouth with fishing line_
+![](/blog-static/animatronic-dinosaur/DSC00766_mouth_servo_1_sm.jpg?lightbox&resize=700)
+_Servo connected to mouth with fishing line_
 
 I ordered a Raspberry Pi Zero W without pins attached. I determined that if I attached a minimal amount of pins to the Pi I could make it fit on the same small breadboard as the Mini Arduino. Time to break out the soldering iron!
 
-![](/blog-static/animatronic-dinosaur/IMG_9430_soldering_sm.jpg?lightbox&resize=700)<br>_My outdoor soldering station_
+![](/blog-static/animatronic-dinosaur/IMG_9430_soldering_sm.jpg?lightbox&resize=700)
+_My outdoor soldering station_
 
-![](/blog-static/animatronic-dinosaur/IMG_9438_raspi_soldering_sm.jpg?lightbox&resize=700)<br>_First set of pins attached_
+![](/blog-static/animatronic-dinosaur/IMG_9438_raspi_soldering_sm.jpg?lightbox&resize=700)
+_First set of pins attached_
 
-![](/blog-static/animatronic-dinosaur/IMG_9439_raspi_soldered_sm.jpg?lightbox&resize=700)<br>_All pins soldered_
+![](/blog-static/animatronic-dinosaur/IMG_9439_raspi_soldered_sm.jpg?lightbox&resize=700)
+_All pins soldered_
 
-![](/blog-static/animatronic-dinosaur/IMG_9440_raspi_breadboard_sm.jpg?lightbox&resize=700)<br>_Rasberry Pi attached to breadboard_
+![](/blog-static/animatronic-dinosaur/IMG_9440_raspi_breadboard_sm.jpg?lightbox&resize=700)
+_Rasberry Pi attached to breadboard_
 
 After attaching the pins to the Raspberry Pi and attaching it to the breadboard I flashed it with Raspbian and made sure it booted.
 
-![](/blog-static/animatronic-dinosaur/IMG_9442_raspi_boot_up_sm.jpg?lightbox&resize=500)<br>_Boot up success!_
+![](/blog-static/animatronic-dinosaur/IMG_9442_raspi_boot_up_sm.jpg?lightbox&resize=500)
+_Boot up success!_
 
 The final hardware step was to put it all together. I attached the Arduino to the breadboard along with the Pi and wired it up.
 
-![](/blog-static/animatronic-dinosaur/DSC00773_final_hardware_sm.jpg?lightbox&resize=700)<br>_Hardware connected; red and black wires are power and ground and brown in the middle are I2C_
+![](/blog-static/animatronic-dinosaur/DSC00773_final_hardware_sm.jpg?lightbox&resize=700)
+_Hardware connected; red and black wires are power and ground and brown in the middle are I2C_
 
-![](/blog-static/animatronic-dinosaur/IMG_9453_arduino_raspi_powered_ubec_2_sm.jpg?lightbox&resize=700)<br>_Plugged in and powered up_
+![](/blog-static/animatronic-dinosaur/IMG_9453_arduino_raspi_powered_ubec_2_sm.jpg?lightbox&resize=700)
+_Plugged in and powered up_
 
 With the hardware configured, it was time to write the software for both boards.
 
@@ -92,7 +104,8 @@ With the hardware configured, it was time to write the software for both boards.
 
 I developed three programs to control the animatronic. `action_recorder`, `control`, and `actuator`.
 
-![](/blog-static/animatronic-dinosaur/SoftwareArch.PNG?lightbox&resize=850)<br>_Software architecture_
+![](/blog-static/animatronic-dinosaur/SoftwareArch.PNG?lightbox&resize=850)
+_Software architecture_
 
 `action_recorder` is a Python program that runs on the Raspberry Pi. It provides the user the ability to easily generate timing cues for the animatronic. I initially didn't plan on writing this program, just recording the cues manually. After attempting to synchronize some mouth movements manually with the audio track, I realized it would be much more efficient to write something that would allow for easily recording a "rough cut" of the motion which I could then fine tune later. The program is pretty simple: the user executes it at the same time as starting the audio track. As the audio plays, the user presses the space bar to annotate when the mouth should open. The specified cues are then timestamped and recorded to a CSV file which the `control` program can interpret. These cues aren't perfect, but it's a lot easier to fine tune them than generating them manually.
 

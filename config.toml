@@ -24,7 +24,7 @@ style = "monokai"
 tabWidth = 4
 
 [permalinks]
-post = "/post/:year/:month/:day/:slug/"
+post = "/blog/:slug/"
 
 [[menu.main]]
 name = "Blog"
