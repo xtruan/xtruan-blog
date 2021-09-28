@@ -14,7 +14,7 @@ tags:
     - software
     - robotics
 header_image: '0'
-header_image_file: Roomba_TitleImage.PNG
+header_image_file: /blog-static/portal-turret-roomba/Roomba_TitleImage.PNG
 content:
     items: '- ''@self.children'''
     limit: '5'
