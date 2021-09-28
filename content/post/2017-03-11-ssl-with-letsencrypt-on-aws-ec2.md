@@ -23,7 +23,10 @@ SSL, or Secure Sockets Layer, is one of the technologies essential to security o
 
 Luckily, SSL is becoming more and more prevalent thanks to efforts by internet companies and a better understanding of why security is important among users. Most browsers have also started advertising that sites without SSL are insecure. The images below show what websites that are using SSL look like on Google Chrome vs. those that are not using SSL:
 
-![Using SSL](/blog-static/ssl-with-letsencrypt-on-aws-ec2/https_bar.PNG)![vs.](/blog-static/ssl-with-letsencrypt-on-aws-ec2/vs_bar_w.png)![Not using SSL](/blog-static/ssl-with-letsencrypt-on-aws-ec2/http_bar.PNG)
+![Using SSL](/blog-static/ssl-with-letsencrypt-on-aws-ec2/https_bar.PNG)
+<p style="text-align: center">vs.</p>
+
+![Not using SSL](/blog-static/ssl-with-letsencrypt-on-aws-ec2/http_bar.PNG)
 
 SSL works by using a certificate issued by a trusted certificate authority (CA) being installed on the web server. Traditionally these certificates were not free and were complicated to configure. That changed with the introduction of the [Let's Encrypt CA](https://letsencrypt.org/). Let's Encrypt provides free SSL certificates along with an associated software package to automatically install and update them - very cool.
 
