@@ -1,4 +1,4 @@
 [submodule "themes/hugo-classic"]
 	path = themes/hugo-classic
 	url = https://github.com/xtruan/hugo-classic
-	branch = struan-blog
+	branch = xtruan-blog
