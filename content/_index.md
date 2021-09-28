@@ -6,7 +6,7 @@ title: Home
   src="/images/IMG_4900_200.jpg"
   alt="Me">
 
-## About Me
+# About Me
 
 I'm a software engineer in Colorado. I like to work on all kinds of software, whether it runs on a desktop, mobile, or low level embedded systems. I've recently been into developing <a href="https://apps.garmin.com/en-US/developer/d4443edc-699b-45fa-8b39-69d4ba213915/apps">smartwatch apps</a> for my Garmin v<span class="bold">ívoactive.</span>
 
