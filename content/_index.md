@@ -1,7 +1,7 @@
 ---
 title: Home
 ---
-<img src="/images/IMG_4900_2000.jpg" alt="Me sitting on a picnic table holding a leash" title="Me on a picnic table">
+<img src="/images/IMG_4900_640.jpg" alt="Me sitting on a picnic table holding a leash" title="Me on a picnic table">
 
 Hi, I'm Struan.
 
