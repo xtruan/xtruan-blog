@@ -6,3 +6,6 @@
 	path = static/projects/tub3d
 	url = https://github.com/xtruan/tub3d-release
 	branch = main
+[submodule "static/projects/chessjs"]
+	path = static/projects/chessjs
+	url = https://github.com/xtruan/chessjs
