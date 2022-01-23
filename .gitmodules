@@ -9,3 +9,6 @@
 [submodule "static/projects/chessjs"]
 	path = static/projects/chessjs
 	url = https://github.com/xtruan/chessjs
+[submodule "static/projects/blackjacktutorjs"]
+	path = static/projects/blackjacktutorjs
+	url = https://github.com/xtruan/blackjacktutorjs
