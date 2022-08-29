@@ -27,8 +27,8 @@ tabWidth = 4
 post = "/blog/:slug/"
 
 [[menu.main]]
-name = "Blog"
-url = "/categories/blog/"
+name = "About"
+url = "/about"
 weight = 1
 [[menu.main]]
 name = "Tags"
