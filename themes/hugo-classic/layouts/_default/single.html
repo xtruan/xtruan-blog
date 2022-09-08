@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+{{ if .Params.image }}<img class="title" src="{{ .Params.image }}" alt="{{ .Title }}" title="{{ .Title }}"/>
+{{ else }}<h2><span class="title">{{ .Title | markdownify }}</span></h2>
+{{ end }}
+{{ if .Params.author }}<!--h3 class="author">{{ .Params.author }}</h3-->{{ end }}
+{{ if .Params.date }}<p class="author date"><i>{{ if .Params.author }}By: {{ .Params.author }} on {{ end }}{{ .Date.Format "2006-01-02" }}</i></p>{{ end }}
+<span class="tags terms">
+  {{ range $i := (slice "tags") }}
+  {{ with ($.Param $i) }}
+  {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a> {{ end }}
+  {{ end }}
+  {{ end }}
+</p>
+</div>
+
+{{ if .Params.toc }}
+{{ .TableOfContents }}
+{{ end }}
+<div class="content-wrapper">
+  <main>
+    {{ .Content }}
+    <a href="/"> >> Home</a>
+  </main>
+</div>
+{{ partial "footer.html" . }}

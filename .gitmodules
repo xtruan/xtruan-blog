@@ -1,7 +1,3 @@
-[submodule "themes/hugo-classic"]
-	path = themes/hugo-classic
-	url = https://github.com/xtruan/hugo-classic
-	branch = xtruan-blog
 [submodule "static/projects/tub3ed"]
 	path = static/projects/tub3d
 	url = https://github.com/xtruan/tub3d-release
