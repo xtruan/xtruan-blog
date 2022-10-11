@@ -4,7 +4,7 @@
 {{ else }}<h2><span class="title">{{ .Title | markdownify }}</span></h2>
 {{ end }}
 {{ if .Params.author }}<!--h3 class="author">{{ .Params.author }}</h3-->{{ end }}
-{{ if .Params.date }}<p class="author date"><i>{{ if .Params.author }}By: {{ .Params.author }} on {{ end }}{{ .Date.Format "2006-01-02" }}</i></p>{{ end }}
+{{ if .Params.date }}<p class="author date">{{ if .Params.author }}By: {{ .Params.author }} on {{ end }}{{ .Date.Format "2006-01-02" }}</p>{{ end }}
 <span class="tags terms">
   {{ range $i := (slice "tags") }}
   {{ with ($.Param $i) }}
