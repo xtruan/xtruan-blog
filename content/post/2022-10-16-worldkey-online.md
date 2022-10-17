@@ -14,7 +14,7 @@ slug: worldkey-online
 #image: /blog-static/worldkey-online/Worldkey10.webp
 ---
 
-EPCOT Center. If you were lucky enough to visit in the as a kid you either loved it or hated it. I was firmly in the love camp, as a kid who was obsessed with computers and technology. Those in this camp seem to talk about, or rather, fondly reminisce about what used to be, and lament the state of the original pieces that are still hanging on. As a child of the 90's, I was lucky enough to experience the last gasps of Horizons and Journey into Imagination, as well as see the dinosaurs in the Energy pavilion. I still remember the 1994-2007 Spaceship Earth as one of the most inspirational touchstones of that time in my life. However during the earlier days of EPCOT Center, there was another, perhaps lesser known component that was just as innovative in own way. This technology was known as WorldKey.
+EPCOT Center. If you were lucky enough to visit as a kid you either loved it or hated it. I was firmly in the love camp, as a kid who was obsessed with computers and technology. Those in this camp seem to talk about, or rather, fondly reminisce about what used to be, and lament the state of the original pieces that are still hanging on. As a child of the 90's, I was lucky enough to experience the last gasps of Horizons and Journey into Imagination, as well as see the dinosaurs in the Energy pavilion. I still remember the 1994-2007 Spaceship Earth as one of the most inspirational touchstones of that time in my life. However during the earlier days of EPCOT Center, there was another, perhaps lesser known component that was just as innovative in own way. This technology was known as WorldKey.
 
 <!--more-->
 
