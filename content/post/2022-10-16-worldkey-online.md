@@ -18,6 +18,10 @@ EPCOT Center. If you were lucky enough to visit in the as a kid you either loved
 
 <!--more-->
 
+#### TL;DR
+
+If you just can't wait to see the project, here's a direct link: [https://worldkey.magicalmiles.net](https://worldkey.magicalmiles.net).
+
 #### Background on WorldKey
 
 EPCOT Center opened in October of 1982. In 1982, the average person wasn't really exposed to what I'll call "interactive screens". Sure, there was television. And about 10% of people in the US had largely text-based home computers. But there wasn't a widespread penetration of the interactive screens we take for granted today. 40 years later, you're reading this blog post on some kind of interactive screen. It has a full graphical interface, and it likely has touch capability. Not to mention, the interactive screen you're reading this on is likely one of several you have in our home, and one of a dozen you interact with on a daily basis. Imagine having none of that innate context and understanding, and being presented with an interactive screen. Would you know how to use it? Would you have any desire to use it?
@@ -134,7 +138,7 @@ You've made it this far, and by this point should have a general understanding o
 
 <iframe style="height:550px;width:100%" src="https://worldkey.s3.us-east-2.amazonaws.com/index.html"></iframe>
 
-You can also navigate to the WorldKey console directly by [clicking here](https://worldkey.magicalmiles.net).
+You can also navigate to the WorldKey console directly by [clicking here](https://worldkey.magicalmiles.net). This is highly recommended if the frame above includes a scroll bar on your device.
 
 #### Some of the Tricks I Used
 
@@ -150,7 +154,7 @@ I am aware of a few bugs in the finished product.
 
 - The "touch sound" doesn't work on iOS devices. This is due to the way iOS handles sound when video content is playing. Maybe there's a workaround, but I haven't looked for it.
 - The "sliding animation" is almost certainly wrong for the pavilion navigation under the EPCOT section of WorldKey. This is where I think the Disney Imagineers got fancy and had the LaserDisc play backwards when performing a "left" navigation, and play forward as normal when performing a "right" navigation. Since my player is only capable of playing forward, the slide happens backwards when navigating "left".
-- Many of the "dynamic content" screens that would have computer provided text content are blank. This is because I haven't built a simulated computer to generate that data. Maybe that's a next step for this project...
+- All of the "dynamic content" screens that would have computer provided text content are blank. This is because I haven't built a simulated computer to generate that data. Maybe that's a next step for this project...
 - The last bug is actually with the content itself. One of the menus for the Odyssey Restaurant suggests that there is a tour video describing the restaurant. However, it isn't on the LaserDisc and the other menus do not have the graphic. I'm very curious what would've happened if you were to touch that graphic on the real system. My bet is... nothing.
 
 One thing I did not mention above is the ability to toggle the scanlines on and off. I have them off by default, because they gave me a headache after a while, but definitely turn them on at least for a minute or two to make the screen look more like a CRT.
