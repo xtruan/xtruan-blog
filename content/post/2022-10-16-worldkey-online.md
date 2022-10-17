@@ -20,7 +20,7 @@ EPCOT Center. If you were lucky enough to visit in the as a kid you either loved
 
 #### TL;DR
 
-If you just can't wait to see the project, here's a direct link: [https://worldkey.magicalmiles.net](https://worldkey.magicalmiles.net).
+If you just can't wait to see the project in action, here's a direct link: [https://worldkey.magicalmiles.net](https://worldkey.magicalmiles.net).
 
 #### Background on WorldKey
 
