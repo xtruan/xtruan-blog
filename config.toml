@@ -1,7 +1,7 @@
 baseurl = "/"
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
-googleAnalytics = ""
+googleAnalytics = "G-FQL55J4B62"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 languageCode = "en-us"
 theme = "hugo-classic"
