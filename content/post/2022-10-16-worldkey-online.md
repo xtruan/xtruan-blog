@@ -20,7 +20,7 @@ EPCOT Center. If you were lucky enough to visit as a kid you either loved it or 
 
 #### TL;DR
 
-If you just can't wait to see the project in action, here's a direct link: [https://worldkey.magicalmiles.net](https://worldkey.magicalmiles.net).
+If you just can't wait to see the project in action, here's a direct link: [WorldKey Console](#worldkey-console).
 
 #### Background on WorldKey
 
@@ -134,11 +134,101 @@ At this point I had a video player that could consume a JSON "script" telling it
 
 #### Without Further Ado
 
-You've made it this far, and by this point should have a general understanding of what makes up the project, so here it is! Presenting WorldKey Information Online - touch the screen to start!
+You've made it this far, and by this point should have a general understanding of what makes up the project, so here it is! 
 
-<iframe style="height:550px;width:100%" src="https://worldkey.s3.us-east-2.amazonaws.com/index.html"></iframe>
+<a id="worldkey-console"></a>
+Presenting <span style="font-family:'Prototype',sans-serif;">WorldKey Information Online</span> - touch the screen to start!
 
-You can also navigate to the WorldKey console directly by [clicking here](https://worldkey.magicalmiles.net). This is highly recommended if the frame above includes a scroll bar on your device.
+<style>
+.worldkey-container {
+    min-width: 790px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.invisible {
+    display: none;
+}
+video {
+    cursor: url("https://worldkey.s3.us-east-2.amazonaws.com/cur/normal.cur"), auto;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.video-container {
+    height: 360px;
+    width: 490px;
+    border: solid;
+    border-color: black;
+    border-width: 20px;
+    background-color: blue;
+    display: inline-block;
+    margin: 0 -5px 0 -5px;
+}
+.left-rect {
+    height: 398px;
+    width: 120px;
+    border: solid;
+    border-color: #0f1f3d;
+    border-width: 1px 0 1px 1px;
+    border-radius: 60px 0 0 60px;
+    background: linear-gradient(#1f3d7a, #3366cc, #1f3d7a);
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+.right-rect {
+    height: 398px;
+    width: 120px;
+    border: solid;
+    border-color: #0f1f3d;
+    border-width: 1px 1px 1px 0;
+    border-radius: 0 60px 60px 0;
+    background: linear-gradient(#1f3d7a, #3366cc, #1f3d7a);
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+</style>
+<div id="worldkeyContainer" class="worldkey-container">
+    <script src="https://worldkey.s3.us-east-2.amazonaws.com/media/WorldKey1982.min.js"></script>
+    <div class="left-rect"></div>
+    <div id="videoContainer" class="video-container">
+        <video id="videoPlayer" width="490" height="360" playsinline>
+            <source src="https://worldkey.s3.us-east-2.amazonaws.com/media/WorldKey1982.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="right-rect"></div>
+    <div id="controls" class="controls invisible">
+        <br>
+        <div>
+            <button id="playButton" onclick="play()">Play</button>
+            <button id="pauseButton" onclick="pause()">Pause</button>
+            <input id="seekSlider" type="range" min="0" max="48000" step="1" value="0" onchange="sliderSeek()" style="width:250px">
+            <input id="seekNumber" style="width:80px">
+            <button id="seekButton" onclick="inputSeek()">Seek</button>
+        </div>
+        <div>
+            <button id="backButton1" onclick="buttonSeek(-1)"><</button>
+            <button id="backButton10" onclick="buttonSeek(-10)"><<</button>
+            <button id="backButton100" onclick="buttonSeek(-100)"><<<</button>
+            <button id="backButton1000" onclick="buttonSeek(-1000)"><<<<</button>
+            <input id="previousSceneName" style="width:200px">
+        </div>
+            <button id="fwdButton1" onclick="buttonSeek(1)">></button>
+            <button id="fwdButton10" onclick="buttonSeek(10)">>></button>
+            <button id="fwdButton100" onclick="buttonSeek(100)">>>></button>
+            <button id="fwdButton1000" onclick="buttonSeek(1000)">>>>></button>
+            <input id="sceneName" style="width:200px">
+        </div>
+    </div>
+</div>
+<script src="https://worldkey.s3.us-east-2.amazonaws.com/js/VideoFrame.min.js"></script>
+<script src="https://worldkey.s3.us-east-2.amazonaws.com/js/zounds.min.js"></script>
+<script src="https://worldkey.s3.us-east-2.amazonaws.com/js/LaserDiscMagic.min.js"></script>
+
+You can also navigate to the WorldKey console on a dedicated page by [clicking here](https://worldkey.magicalmiles.net). This is highly recommended if the "video screen" does not fit completely on your actual screen.
 
 #### Some of the Tricks I Used
 
