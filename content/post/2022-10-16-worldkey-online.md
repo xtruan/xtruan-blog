@@ -137,12 +137,12 @@ At this point I had a video player that could consume a JSON "script" telling it
 You've made it this far, and by this point should have a general understanding of what makes up the project, so here it is! 
 
 <a id="worldkey-console"></a>
-Presenting <span style="font-family:'Prototype',sans-serif;">WorldKey Information Online</span> - touch the screen to start!
+Presenting: <span style="font-family:'Prototype',sans-serif;">WorldKey Information Online</span> - touch the screen to start!
 
 <style>
 .worldkey-container {
-    min-width: 790px;
-    display: table-cell;
+    /* min-width: 790px;
+    display: table-cell; */
     vertical-align: middle;
 }
 .invisible {
@@ -165,10 +165,12 @@ video {
     border-color: black;
     border-width: 20px;
     background-color: blue;
-    display: inline-block;
-    margin: 0 -4px 0 -4px;
+    display: block;
+    margin: auto;
+    /* display: inline-block;
+    margin: 0 -4px 0 -4px; */
 }
-.left-rect {
+/* .left-rect {
     height: 398px;
     width: 120px;
     border: solid;
@@ -189,17 +191,17 @@ video {
     background: linear-gradient(#1f3d7a, #3366cc, #1f3d7a);
     display: inline-block;
     margin: 0 0 0 0;
-}
+} */
 </style>
 <div id="worldkeyContainer" class="worldkey-container">
     <script src="https://worldkey.s3.us-east-2.amazonaws.com/media/WorldKey1982.min.js"></script>
-    <div class="left-rect"></div>
+    <!-- <div class="left-rect"></div> -->
     <div id="videoContainer" class="video-container">
         <video id="videoPlayer" width="490" height="360" playsinline>
             <source src="https://worldkey.s3.us-east-2.amazonaws.com/media/WorldKey1982.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="right-rect"></div>
+    <!-- <div class="right-rect"></div> -->
     <div id="controls" class="controls invisible">
         <br>
         <div>
