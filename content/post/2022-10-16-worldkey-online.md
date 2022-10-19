@@ -166,7 +166,7 @@ video {
     border-width: 20px;
     background-color: blue;
     display: inline-block;
-    margin: 0 -5px 0 -5px;
+    margin: 0 -4px 0 -4px;
 }
 .left-rect {
     height: 398px;
