@@ -12,5 +12,3 @@ My most recent work is available on my <a href="http://github.com/xtruan">GitHub
 Aside from my personal projects, I'm a software engineer at <a href="https://www.nrel.gov/">NREL</a>. Some more work information is available on my <a href="http://www.linkedin.com/in/struanclark">LinkedIn profile</a>. My research contributions are presented on <a href="https://orcid.org/0000-0003-0078-6560">ORCiD</a>.
 
 A good email to contact me is <strong>me (at) struanclark.com</strong>
-
-I'm on Twitter at <a href="https://twitter.com/xtruan">@xtruan</a>
