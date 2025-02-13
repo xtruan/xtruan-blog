@@ -5,7 +5,7 @@ title: About Me
 
 Hi, I'm Struan.
 
-I'm a software engineer in Colorado. I like to work on all kinds of software, whether it runs on a desktop, mobile, or low level embedded systems. I've recently been into developing <a href="https://apps.garmin.com/en-US/developer/d4443edc-699b-45fa-8b39-69d4ba213915/apps">smartwatch apps</a> for my Garmin devices.
+I'm a software engineer in Colorado. I like to work on all kinds of software, whether it runs on a desktop, mobile, or low level embedded systems. I've recently been into developing <a href="https://apps.garmin.com/en-US/developer/d4443edc-699b-45fa-8b39-69d4ba213915/apps">smartwatch apps</a> for Garmin's Connect IQ platform and <a href="https://github.com/stars/xtruan/lists/my-flipper-zero-apps">various apps</a> for the Flipper Zero.
 
 My most recent work is available on my <a href="http://github.com/xtruan">GitHub profile</a>. I also write a <a href="../categories/blog">blog post</a> every once in a while about random engineering related stuff.
 
