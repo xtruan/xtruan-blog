@@ -261,6 +261,6 @@ I'd love to get a better quality rip of the LaserDisc video too. The version I'm
 
 #### Final Thoughts
 
-I had a really good time exploring this project. Hopefully it's given you some insight into an extinct system and let you see what it would be like to experience a small piece of EPCOT Center from 1982. Special mention to the uploader of [the LaserDisc to YouTube](https://www.youtube.com/watch?v=YbJR0ey3yjg). This kind of archival work is critical for the preservation of these antique systems, and without people doing this, projects like this would not be possible. If you found this project interesting, or want to discuss more, please feel free to reach out on Twitter [@xtruan](https://twitter.com/xtruan).
+I had a really good time exploring this project. Hopefully it's given you some insight into an extinct system and let you see what it would be like to experience a small piece of EPCOT Center from 1982. Special mention to the uploader of [the LaserDisc to YouTube](https://www.youtube.com/watch?v=YbJR0ey3yjg). This kind of archival work is critical for the preservation of these antique systems, and without people doing this, projects like this would not be possible. If you found this project interesting, or want to discuss more, please feel free to reach out via email: *me (at) struanclark.com*.
 
 Also, this project was conducted as a hobby. It is not associated in any way with the Walt Disney Company or AT&T.
